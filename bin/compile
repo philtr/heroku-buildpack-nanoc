@@ -37,10 +37,3 @@ echo "-----> Compiling nanoc site"
 
 # go go gadget nanoc!
 bundle exec nanoc compile | indent
-
-# set up nanoc config
-cat << EOF >> $BUILD_DIR/static.json
-{
-  "root": "output/"
-}
-EOF
